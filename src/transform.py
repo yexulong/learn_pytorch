@@ -4,10 +4,10 @@ from PIL import Image
 from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 
-img_path = 'dataset/train/ants/0013035.jpg'
+img_path = '../dataset/train/ants/0013035.jpg'
 img = Image.open(img_path)
 
-writer = SummaryWriter('logs')
+writer = SummaryWriter('../logs')
 
 tensor_trans = transforms.ToTensor()
 tensor_img = tensor_trans(img)

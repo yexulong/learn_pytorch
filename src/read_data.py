@@ -25,7 +25,7 @@ class MyData(Dataset):
 
 
 if __name__ == '__main__':
-    root_dir = "dataset/train"
+    root_dir = "../dataset/train"
     ants_dataset = MyData(root_dir, 'ants')
     img, label = ants_dataset[0]
     img.show()

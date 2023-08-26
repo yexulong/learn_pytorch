@@ -2,7 +2,7 @@
 from torch.utils.tensorboard import SummaryWriter
 
 
-writer = SummaryWriter('logs')
+writer = SummaryWriter('../logs')
 
 # writer.add_image()
 # y = x

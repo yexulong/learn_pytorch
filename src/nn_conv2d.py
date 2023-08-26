@@ -6,7 +6,7 @@ from torch.utils.data import DataLoader
 from torch import nn
 from torch.utils.tensorboard import SummaryWriter
 
-dataset = torchvision.datasets.CIFAR10('./cifar10_dataset', train=False, transform=torchvision.transforms.ToTensor(),
+dataset = torchvision.datasets.CIFAR10('../cifar10_dataset', train=False, transform=torchvision.transforms.ToTensor(),
                                        download=True)
 
 dataloader = DataLoader(dataset, batch_size=64)
@@ -25,7 +25,7 @@ class LearnNN(nn.Module):
 
 learn_nn = LearnNN()
 
-writer = SummaryWriter('logs')
+writer = SummaryWriter('../logs')
 for index, data in enumerate(dataloader):
     imgs, targets = data
     output = learn_nn(imgs)
