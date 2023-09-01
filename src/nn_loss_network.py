@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 
 from nn_seq import LearnSeq
 
-dataset = torchvision.datasets.CIFAR10('../cifar10_dateset', train=False, transform=torchvision.transforms.ToTensor(),
+dataset = torchvision.datasets.CIFAR10('../cifar10_dataset', train=False, transform=torchvision.transforms.ToTensor(),
                                        download=True)
 dataloader = DataLoader(dataset, batch_size=1)
 
